@@ -8,7 +8,7 @@ General
 - <leader>sk to check out the different keymaps
 - <leader>ff to search files
 - <leader>ss to explore by symbols
-
+ 
 Window
 - control + hjkl moves windows
 
