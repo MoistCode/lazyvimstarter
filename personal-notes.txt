@@ -1,0 +1,11 @@
+Git
+- Use <leader>gg to open up LazyGit
+
+General
+- <leader>e toggles the explorer
+
+Window
+- control + hjkl moves windows
+
+References
+- https://www.lazyvim.org/keymaps
