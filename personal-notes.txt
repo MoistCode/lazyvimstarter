@@ -3,6 +3,11 @@ Git
 
 General
 - <leader>e toggles the explorer
+- use s to use flash search
+- <leader>s to start checking out different types of searches
+- <leader>sk to check out the different keymaps
+- <leader>ff to search files
+- <leader>ss to explore by symbols
 
 Window
 - control + hjkl moves windows
