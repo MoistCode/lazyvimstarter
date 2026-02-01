@@ -9,6 +9,7 @@ General
 - <leader>ff to search files
 - <leader>ss to explore by symbols
 - play around with <leader>a for claude code
+- quickref.txt is very helpful
 
 Window
 - control + hjkl moves windows
