@@ -1,18 +1,95 @@
+Navigation
+- w/b/e word navigation, W/B/E for WORD (skips punctuation)
+- 0 start of line, ^ first char, $ end of line
+- f{char}/F{char} jump to char on current line (f" jumps to next quote, F" jumps back); using Flash may be faster
+  use ; to repeat same direction, , to reverse direction
+- t{char}/T{char} till char (stops before)
+- % jump to matching bracket
+- gg top of file, G bottom, {n}G go to line n
+- ctrl+d/ctrl+u half-page down/up
+- s use flash search (type chars, then jump label)
+
+Text Objects (use with d, c, y, v)
+- iw/aw inner/around word
+- i"/a" inner/around quotes (also i', i`)
+- i{/a{ inner/around braces (also i[, i(, i<)
+- it/at inner/around HTML/JSX tag
+- if/af inner/around function (treesitter)
+
+Editing
+- ci" change inside quotes, ca{ change around braces
+- yiw yank word, diw delete word
+- . repeat last change
+- u undo, ctrl+r redo
+- >> indent, << dedent, == auto-indent
+
+LSP (TypeScript/React)
+- gd go to definition
+- gr go to references
+- K hover documentation
+- <leader>ca code actions (quick fixes, refactors)
+- <leader>cr rename symbol
+- <leader>co organize imports
+- ]d / [d next/prev diagnostic
+- <leader>cd line diagnostics
+
+Diagnostics (Trouble)
+- <leader>xx toggle Trouble panel
+- <leader>xX buffer diagnostics
+- <leader>xL location list
+- <leader>xQ quickfix list
+
+Search
+- <leader><space> find files (fastest)
+- <leader>ff find files (alternative)
+- <leader>sg live grep (search in files)
+- <leader>sw search word under cursor
+- <leader>ss search by symbols
+- <leader>sk search keymaps
+- <leader>s explore more search options
+- <leader>sr resume last search
+- <leader>/ fuzzy search current buffer
+- <leader>sR search/replace with grug-far
+
+File Explorer (Neo-tree)
+- <leader>e toggle explorer
+- a create file/folder (end with / for folder)
+- r rename, d delete, c copy, m move
+- h collapse parent, l expand/open
+- P preview file
+
+Buffers & Windows
+- [b / ]b prev/next buffer
+- <leader>bd close buffer
+- <leader>bb switch to other buffer
+- ctrl+h/j/k/l move between windows
+- <leader>- split horizontal, <leader>| split vertical
+
 Git
-- Use <leader>gg to open up LazyGit
+- <leader>gg open LazyGit
+- ]h / [h next/prev hunk
+- <leader>ghs stage hunk
+- <leader>ghr reset hunk
+- <leader>ghp preview hunk
+- <leader>ghb blame line
 
-General
-- <leader>e toggles the explorer
-- use s to use flash search
-- <leader>s to start checking out different types of searches
-- <leader>sk to check out the different keymaps
-- <leader>ff to search files
-- <leader>ss to explore by symbols
-- play around with <leader>a for claude code
-- quickref.txt is very helpful
+Formatting
+- <leader>cf format file/selection
+- Formats on save automatically (Conform)
 
-Window
-- control + hjkl moves windows
+Terminal
+- ctrl+/ toggle terminal
+- ctrl+` toggle terminal (alternative)
+
+Tips
+- Press <leader> and wait to see which-key menu
+- <leader>a for Claude Code
+- :help quickref.txt is very helpful for learning Vim
+- :Lazy to manage plugins
+- :Mason to manage LSP servers
+- qa record macro to register a, q stop, @a play
+- m{a-z} set mark, '{a-z} jump to mark
+- <leader>st search TODOs
 
 References
 - https://www.lazyvim.org/keymaps
