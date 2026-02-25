@@ -1,18 +1,16 @@
 return {
-  "kdheepak/lazygit.nvim",
-  lazy = true,
-  cmd = {
-    "LazyGit",
-    "LazyGitConfig",
-    "LazyGitCurrentFile",
-    "LazyGitFilter",
-    "LazyGitFilterCurrentFile",
+  "folke/snacks.nvim",
+  opts = {
+    styles = {
+      lazygit = {
+        width = 0,
+        height = 0,
+        border = "none",
+        backdrop = false,
+      },
+    },
   },
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-  },
-
   keys = {
-    { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    { "<leader>lg", function() Snacks.lazygit({ cwd = LazyVim.root.git() }) end, desc = "LazyGit" },
   },
 }
