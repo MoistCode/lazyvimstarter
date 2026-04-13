@@ -6,6 +6,7 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          layout = { preset = "sidebar" },
         },
         grep = {
           hidden = true,

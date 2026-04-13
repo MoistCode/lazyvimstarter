@@ -2,13 +2,6 @@ return {
   "folke/snacks.nvim",
   opts = {
     styles = {
-      -- Make all floating windows fullscreen
-      float = {
-        width = 0,
-        height = 0,
-        border = "none",
-        backdrop = false,
-      },
       lazygit = {
         width = 0,
         height = 0,
@@ -17,14 +10,24 @@ return {
       },
     },
     picker = {
-      layout = {
-        -- Override the default picker layout to be fullscreen
-        preset = "default",
-        layout = {
-          width = 0,
-          height = 0,
-          border = "none",
-          backdrop = false,
+      -- Override the built-in presets to be fullscreen. Sources that opt
+      -- into a different preset (e.g. explorer → "sidebar") are untouched.
+      layouts = {
+        default = {
+          layout = {
+            width = 0,
+            height = 0,
+            border = "none",
+            backdrop = false,
+          },
+        },
+        vertical = {
+          layout = {
+            width = 0,
+            height = 0,
+            border = "none",
+            backdrop = false,
+          },
         },
       },
     },
