@@ -11,6 +11,16 @@ return {
         grep = {
           hidden = true,
           ignored = true,
+          exclude = {
+            "build",
+            "dist",
+            "out",
+            "node_modules",
+            ".next",
+            ".nuxt",
+            "target",
+            "__pycache__",
+          },
         },
       },
     },
