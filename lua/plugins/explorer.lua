@@ -13,6 +13,7 @@ return {
           ignored = true,
           exclude = {
             "build",
+            ".nx",
             "dist",
             "out",
             "node_modules",
